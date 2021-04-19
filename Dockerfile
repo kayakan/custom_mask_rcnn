@@ -17,7 +17,7 @@ WORKDIR /
 # Install required packegesfor Mask RCNN
 #RUN conda create -n py369-tf1-MrCnn python=3.6.9
 RUN git clone https://github.com/matterport/Mask_RCNN.git
-RUN conda install jupyter, nb_conda
+RUN conda install nb_conda
 RUN conda install tensorflow-gpu=1.15
 RUN conda install keras=2.2.4
 RUN conda install -c conda-forge imageio
